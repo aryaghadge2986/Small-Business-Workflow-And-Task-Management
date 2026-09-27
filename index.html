@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BizFlow - Smart Workflow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                B
+            </div>
+
+            <div>
+                <h1>BizFlow</h1>
+                <p>Smart Workflow</p>
+            </div>
+
+        </div>
+
+
+        <p class="menu-title">
+            MAIN MENU
+        </p>
+
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <a href="index.html"
+               class="nav-btn active">
+
+                <span>🏠</span>
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="tasks.html"
+               class="nav-btn">
+
+                <span>📋</span>
+                <span>Tasks</span>
+
+            </a>
+
+
+            <a href="create-tasks.html"
+               class="nav-btn">
+
+                <span>➕</span>
+                <span>Create Task</span>
+
+            </a>
+
+
+            <a href="settings.html"
+               class="nav-btn">
+
+                <span>⚙️</span>
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- SIDEBAR INFO -->
+
+        <div class="sidebar-info">
+
+            <div class="info-icon">
+                🚀
+            </div>
+
+            <h3>
+                Work smarter
+            </h3>
+
+            <p>
+                Manage tasks and collaborate
+                with your team.
+            </p>
+
+        </div>
+
+
+        <!-- USER -->
+
+        <div class="user">
+
+            <div class="avatar">
+                A
+            </div>
+
+            <div>
+
+                <strong>
+                    Arya
+                </strong>
+
+                <small>
+                    Admin
+                </small>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div>
+
+                <span class="label">
+                    OVERVIEW
+                </span>
+
+                <h2>
+                    Dashboard 👋
+                </h2>
+
+                <p>
+                    Here's what's happening with your workflow.
+                </p>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= STAT CARDS ================= -->
+
+        <div class="stats">
+
+
+            <!-- TOTAL -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+                    📋
+                </div>
+
+                <div>
+
+                    <p>
+                        Total Tasks
+                    </p>
+
+                    <h3 id="totalTasks">
+                        0
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PENDING -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+                    ⏳
+                </div>
+
+                <div>
+
+                    <p>
+                        Pending
+                    </p>
+
+                    <h3 id="pendingTasks">
+                        0
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- IN PROGRESS -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+                    ⚡
+                </div>
+
+                <div>
+
+                    <p>
+                        In Progress
+                    </p>
+
+                    <h3 id="progressTasks">
+                        0
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COMPLETED -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+                    ✓
+                </div>
+
+                <div>
+
+                    <p>
+                        Completed
+                    </p>
+
+                    <h3 id="completedTasks">
+                        0
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= DASHBOARD CONTENT ================= -->
+
+        <div class="dashboard-grid">
+
+
+            <!-- WORKFLOW HEALTH -->
+
+            <div class="overview-card health-card">
+
+                <span class="label">
+                    WORKFLOW HEALTH
+                </span>
+
+                <h3>
+                    Business Health
+                </h3>
+
+
+                <div class="health">
+
+                    <strong id="healthScore">
+                        0%
+                    </strong>
+
+                    <div class="progress">
+
+                        <div id="healthProgress"></div>
+
+                    </div>
+
+                </div>
+
+
+                <p id="healthMessage">
+                    Add tasks to see your workflow health.
+                </p>
+
+            </div>
+
+
+
+            <!-- SMART ASSISTANT -->
+
+            <div class="overview-card recommendation">
+
+                <span class="label">
+                    SMART ASSISTANT
+                </span>
+
+                <h3>
+                    💡 Recommended Next
+                </h3>
+
+
+                <p id="recommendation">
+                    Add tasks to get a smart recommendation.
+                </p>
+
+
+                <div class="assistant-box">
+
+                    <span>
+                        ✨
+                    </span>
+
+                    <p>
+                        Your smart workflow assistant
+                        will suggest the next action
+                        based on your tasks.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= WELCOME CARD ================= -->
+
+        <div class="welcome-card">
+
+            <div>
+
+                <span class="label">
+                    BIZFLOW
+                </span>
+
+                <h2>
+                    Manage your work smarter 🚀
+                </h2>
+
+                <p>
+                    Create tasks, track progress and
+                    keep your workflow organized.
+                </p>
+
+            </div>
+
+
+            <a href="create-tasks.html"
+               class="primary-btn">
+
+                + Create Your First Task
+
+            </a>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BizFlow - Tasks</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">B</div>
+
+            <div>
+                <h1>BizFlow</h1>
+                <p>Smart Workflow</p>
+            </div>
+
+        </div>
+
+
+        <p class="menu-title">MAIN MENU</p>
+
+
+        <nav>
+
+            <a href="index.html" class="nav-btn">
+                🏠
+                <span>Dashboard</span>
+            </a>
+
+
+            <a href="tasks.html"
+               class="nav-btn active">
+
+                📋
+                <span>Tasks</span>
+
+            </a>
+
+
+            <a href="create-tasks.html"
+               class="nav-btn">
+
+                ➕
+                <span>Create Task</span>
+
+            </a>
+
+
+            <a href="settings.html"
+               class="nav-btn">
+
+                ⚙️
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-info">
+
+            <div>🚀</div>
+
+            <h3>Work smarter</h3>
+
+            <p>
+                Manage tasks and collaborate
+                with your team.
+            </p>
+
+        </div>
+
+
+        <div class="user">
+
+            <div class="avatar">A</div>
+
+            <div>
+
+                <strong>Arya</strong>
+
+                <small>Admin</small>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main">
+
+
+        <!-- TASK PAGE -->
+
+        <section class="page active-page">
+
+            <header class="top-header">
+
+                <div>
+
+                    <span class="label">
+                        WORK MANAGEMENT
+                    </span>
+
+                    <h2>
+                        My Tasks 📋
+                    </h2>
+
+                    <p>
+                        Create, manage and track
+                        your tasks.
+                    </p>
+
+                </div>
+
+
+                <a href="create-tasks.html"
+                   class="primary-btn">
+
+                    + Add Task
+
+                </a>
+
+            </header>
+
+
+            <!-- SEARCH AND FILTER -->
+
+            <div class="task-tools">
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="🔍 Search tasks..."
+                >
+
+
+                <select id="filter">
+
+                    <option value="All">
+                        All Tasks
+                    </option>
+
+                    <option value="Pending">
+                        Pending
+                    </option>
+
+                    <option value="In Progress">
+                        In Progress
+                    </option>
+
+                    <option value="Completed">
+                        Completed
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- TASK LIST -->
+
+            <div id="taskList">
+
+                <div class="empty">
+
+                    📋
+
+                    <h3>
+                        No tasks yet
+                    </h3>
+
+                    <p>
+                        Create your first task.
+                    </p>
+
+                    <a href="create-tasks.html"
+                       class="primary-btn">
+
+                        + Create Task
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

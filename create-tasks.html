@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BizFlow - Create Task</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">B</div>
+
+            <div>
+                <h1>BizFlow</h1>
+                <p>Smart Workflow</p>
+            </div>
+
+        </div>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <nav>
+
+            <a href="index.html" class="nav-btn">
+                🏠
+                <span>Dashboard</span>
+            </a>
+
+            <a href="tasks.html" class="nav-btn">
+                📋
+                <span>Tasks</span>
+            </a>
+
+            <a href="create-tasks.html" class="nav-btn active">
+                ➕
+                <span>Create Task</span>
+            </a>
+
+            <a href="settings.html" class="nav-btn">
+                ⚙️
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-info">
+
+            <div>🚀</div>
+
+            <h3>Work smarter</h3>
+
+            <p>
+                Manage tasks and collaborate
+                with your team.
+            </p>
+
+        </div>
+
+        <div class="user">
+
+            <div class="avatar">A</div>
+
+            <div>
+                <strong>Arya</strong>
+                <small>Admin</small>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main">
+
+        <section class="page active-page">
+
+            <header class="top-header">
+
+                <div>
+
+                    <span class="label">
+                        WORK MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Create New Task ➕
+                    </h2>
+
+                    <p>
+                        Add a new task to your workflow.
+                    </p>
+
+                </div>
+
+            </header>
+
+
+            <!-- CREATE TASK BOX -->
+
+            <div class="task-box">
+
+                <div class="box-title">
+
+                    <span class="label">
+                        NEW TASK
+                    </span>
+
+                    <h3>
+                        Task Details
+                    </h3>
+
+                </div>
+
+
+                <form id="taskForm">
+
+                    <!-- TASK NAME -->
+
+                    <label>
+                        Task Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="taskName"
+                        placeholder="Enter task name..."
+                        required
+                    >
+
+
+                    <!-- PRIORITY -->
+
+                    <label>
+                        Priority
+                    </label>
+
+                    <select id="priority">
+
+                        <option value="High">
+                            🔴 High Priority
+                        </option>
+
+                        <option value="Medium">
+                            🟡 Medium Priority
+                        </option>
+
+                        <option value="Low">
+                            🟢 Low Priority
+                        </option>
+
+                    </select>
+
+
+                    <!-- STATUS -->
+
+                    <label>
+                        Status
+                    </label>
+
+                    <select id="status">
+
+                        <option value="Pending">
+                            ⏳ Pending
+                        </option>
+
+                        <option value="In Progress">
+                            ⚡ In Progress
+                        </option>
+
+                        <option value="Completed">
+                            ✓ Completed
+                        </option>
+
+                    </select>
+
+
+                    <!-- ASSIGNED TO -->
+
+                    <label>
+                        Assigned To
+                    </label>
+
+                    <select id="assignedTo">
+
+                        <option value="Arya">
+                            👤 Arya
+                        </option>
+
+                        <option value="Shweta">
+                            👤 Shweta
+                        </option>
+
+                        <option value="Tanishka">
+                            👤 Tanishka
+                        </option>
+
+                        <option value="Tejal">
+                            👤 Tejal
+                        </option>
+
+                    </select>
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="form-buttons">
+
+                        <a href="tasks.html"
+                           class="secondary-btn">
+
+                            Cancel
+
+                        </a>
+
+                        <button
+                            type="submit"
+                            class="primary-btn">
+
+                            ✓ Add Task
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
